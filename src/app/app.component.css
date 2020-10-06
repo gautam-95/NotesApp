@@ -1,0 +1,11 @@
+#sidenavContainer {
+  margin-top: 64px;
+}
+
+.mat-sidenav-content  {
+  padding: 24px;
+}
+
+#sidenav {
+  width: 25%;
+}

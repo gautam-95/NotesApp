@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+    <i (click)="onToggle()" class="fas fa-bars icons"></i>
+    <span>MyNotes</span>
+    <span class="spacer"></span>
+    <i class="fas fa-search m-1"></i>
+    <mat-form-field>
+        <input type="text" matInput [(ngModel)]="searchTerm" (ngModelChange)="onSearch($event)" placeholder="Search">
+    </mat-form-field>
+    <button class="m-1" (click)="onAdd()" mat-button>Add New Note</button>
+</mat-toolbar>
+

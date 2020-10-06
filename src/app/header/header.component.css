@@ -1,0 +1,17 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.icons {
+    padding: 0 14px;
+    cursor: pointer;
+  }
+
+  .m-1 {
+    margin: 0% 1%;
+  }
+
+
+::ng-deep .mat-form-field-hide-placeholder{
+    font-size: 14px !important;
+  }

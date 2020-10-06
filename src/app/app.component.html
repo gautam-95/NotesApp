@@ -1,0 +1,15 @@
+<div class="ui-g">
+  <div class="ui-lg-12 ui-md-12 ui-g-12">
+    <app-header (menuToggled)="opened = $event"></app-header>
+  </div>
+  <div class="ui-lg-12 ui-md-12 ui-g-12">
+    <mat-sidenav-container fullScreen id="sidenavContainer">
+      <mat-sidenav [(opened)]="opened" #sidenav mode="side"  id="sidenav">
+        <app-notes-list (noteClicked)="clickedNote = $event"></app-notes-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <app-notes-content [clickedNote]="clickedNote"></app-notes-content>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+</div>
